@@ -1,0 +1,25 @@
+#restaurant-body {
+  background-image: url(../img/meals.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+#restaurant-page {
+  padding: 5%;
+  h1 {
+    padding: 20% 0 5px 0;
+    color: #fff;
+  }
+  h4 {
+    color: #fff;
+    padding: 0 0 25% 0;
+  }
+  .restaurant-form {
+    background: wheat;
+    padding: 10%;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-top: 5%;
+  }
+}
