@@ -3,23 +3,85 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-}
 
-#restaurant-page {
-  padding: 5%;
-  h1 {
-    padding: 20% 0 5px 0;
-    color: #fff;
+  #restaurant-page {
+    padding: 5%;
+    h1 {
+      padding: 20% 0 5px 0;
+      color: #fff;
+    }
+    h4 {
+      color: #fff;
+      padding: 0 0 25% 0;
+    }
+    h2 {
+      padding: 4%;
+      color: $primary-color;
+      font-weight: Bold;
+      color: #fff;
+    }
+    .restaurant-form {
+      background: rgba(#09090a, 0.8);
+      padding: 2px 10% 10% 10%;
+      border: 2px solid rgb(58, 56, 63);
+      border-radius: 20px;
+      margin-top: 2%;
+      box-shadow: 0.1rem 0.1rem 0.4rem rgb(169, 169, 216);
+      h1 {
+        text-align: center;
+        color: blanchedalmond;
+
+        font-family: "Courgette", cursive;
+        font-size: 25px;
+        padding-bottom: 5%;
+      }
+
+      .input1 {
+        background: rgba(#333357, 0.8);
+        padding: 20px;
+        border-left: None;
+        border-top: None;
+        border-right: None;
+        text-align: center;
+        color: blanchedalmond;
+        margin-bottom: 15px;
+        font-family: "Courgette", cursive;
+        font-size: 20px;
+      }
+      #emailInput {
+        background: rgba(#333357, 0.8);
+        padding: 20px;
+        border-left: None;
+        border-top: None;
+        border-right: None;
+        text-align: center;
+        color: blanchedalmond;
+
+        font-family: "Courgette", cursive;
+        font-size: 20px;
+      }
+      .form-check-label {
+        font-family: "Courgette", cursive;
+        font-size: 15px;
+        color: blanchedalmond;
+      }
+      .btn {
+        background: rgba(#e9e9f1, 0.8);
+        padding: 8px 40%;
+
+        text-align: center;
+        color: $primary-color;
+
+        font-family: "Courgette", cursive;
+        font-size: 20px;
+      }
+    }
   }
-  h4 {
-    color: #fff;
-    padding: 0 0 25% 0;
-  }
-  .restaurant-form {
-    background: wheat;
-    padding: 10%;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    margin-top: 5%;
+
+  #restaurant-banner {
+    padding: 4%;
+    color: $primary-color;
+    font-weight: Bold;
+    background: url("../img/chef\ 8.jpg");
   }
 }

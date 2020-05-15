@@ -28,49 +28,37 @@
 
   <body data-spy="scroll" data-target="#navbarResponsive" id="restaurant-body">
     
-      <nav class="navbar navbar-expand-md fixed-top py-3">
-        <div class="container">
-          <a href="#" class="navbar-brand text-uppercase font-weight-bold"
-            ><img id="logo-img" src="img/akram-white-logo.png" alt=""
-          /></a>
-          <button
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            class="navbar-toggler navbar-toggler-right"
-          >
-            <i class="fa fa-bars" style="color: white;"></i>
-          </button>
+    
 
-          <div id="navbarResponsive" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a href="#home" class="nav-link text-uppercase">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#portfolio" class="nav-link text-uppercase"
-                  >Projects</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="#services-section" class="nav-link text-uppercase"
-                  >Services</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="#about" class="nav-link text-uppercase">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link text-uppercase">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
+<nav class="navbar navbar-expand-md navbar-light bg-light" id="org-nav">
+  <div class="container">
+  <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""> <span class="logo-txt"> BookTheChefs</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color: white;"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav  ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Restaurants</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Businesses</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn  " href="#">
+             Place an order
+            </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
       <!--***********************************Start BAnner Section*******************************************************-->
     
 <main id="restaurant-page">
@@ -78,27 +66,54 @@
         <div class="col-md-6">
             <h1>Increase your takeout Sales</h1>
             <h4>With the largest delivery platform in US and Canada</h4>
+
+            <h2> Ready to Join the 1000,000+ Restaurants ? </h2>
         </div>
-        <div class="col-md-6">
-            <form class="restaurant-form">
-  <div class="form-group ">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <div class="col-md-6 needs-validation">
+            <form class="restaurant-form needs-validation" novalidate>
+
+<div class="form-group">
+    <h1>Get Started With BookTheChefs Today!</h1>
+    <input type="text" class="form-control input1" placeholder="Restaurant Name" required>
+    <div class="invalid-feedback">Please Enter Restaurant Name</div>
   </div>
+
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <input type="text" class="form-control input1" id="formGroupExampleInput" placeholder="Address" required>
+    <div class="invalid-feedback">Please Enter An Address</div>
   </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+
+  <div class="form-group ">
+    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="E-mail" required>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <div class="invalid-feedback">Please Enter A Valid E-mail</div>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+
+  <div class="form-group">
+    
+    <input type="text" class="form-control input1" id="formGroupExampleInput" placeholder="Phone" required>
+    <div class="invalid-feedback">Please Enter A Contact Number</div>
+  </div>
+  
+<div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+<div class="text-center">
+  <button type="submit" class="btn">Get Started</button>
+  </div>
 </form>
         </div>
     </div>
 </main>
+
     <!--***********************************End عAbout*******************************************************-->
 
     <!--************Footer***************************-->
@@ -106,13 +121,14 @@
 <section id="footer">
   <footer>
     <div class="row">
-    <h6><a href="#" target="_blank"></a>Terms and Conditions</a></h6>
-    <h6><a href="#" target="_blank"></a>Privacy Policy</a></h6>
-    <h6><a href="#" target="_blank"></a>Business Services</a></h6>
-  <h6> <a href="#" target="_blank"> Be A Partner</a></h6>
+      <h6> <a href="#" target="_blank">Terms and Conditions</a></h6>
+      <h6> <a href="#" target="_blank">Privacy Policy</a></h6>
+      <h6> <a href="#" target="_blank">Business Services</a></h6> 
+  <h6> <a href="#" target="_blank"> Be A Partner</a>
   <h6> <a href="#" target="_blank"> Application End User Licence Agreement</a></h6>
-    <h6> <a href="#" target="_blank"></a> About</a></h6>
-   <h6> <a href="#" target="_blank"></a>contact us</a> </h6>
+    <h6> <a href="#" target="_blank"> About</a>
+    <h6> <a href="#" target="_blank"> contact us</a>
+  
     </div>
 
     <div class="social-links text-center">
@@ -132,6 +148,27 @@
 
 
     <!--************Footer***************************-->
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
 
     <!--JavaScrip Main-->
     <script src="js/main.js"></script>

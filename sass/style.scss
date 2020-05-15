@@ -1,17 +1,6 @@
 @import "config";
 @import "restaurants";
 
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
-
-//font-family: 'Courgette', cursive;
-//font-family: 'Satisfy', cursive;
-//font-family: 'Libre Franklin', sans-serif;
-$primary-color: #1a57a7;
-$secondary-color: #333333;
-$bootstrap-color: #007bff;
-
 html {
   scroll-behavior: smooth;
   font-family: "Libre Franklin", sans-serif;
@@ -35,35 +24,95 @@ body {
 }
 
 /*---------- Navigation---------------*/
+#top-nav {
+  color: wheat;
+  font-size: 14px;
+  padding: 4px;
+  background-color: $primary-color;
 
-//-----------Start NavBar-------------------------------------
-#logo-img {
-  max-width: 150px;
+  .fine {
+    padding-left: 15%;
+  }
+  a {
+    color: white;
+    &:hover {
+      font-size: 20px;
+    }
+  }
 }
-.navbar {
+//*************************
+.active {
+  color: white !important;
+}
+.btn {
+  text-shadow: 0.1rem 0.1rem 0.7rem black !important;
+  text-align: center;
+  &:hover {
+    background-color: #fff !important;
+    transition: all 0.6s !important;
+    color: $primary-color !important;
+    text-shadow: 0.1rem 0.1rem 0.7rem black !important;
+  }
+}
+//*************Second Nav************
+#org-nav {
   transition: all 0.4s;
-  background-color: rgba(0, 0, 0, 0);
-
+  background-color: rgba(0, 0, 0, 0) !important;
   li {
-    margin-right: 0;
-    padding-left: 1rem;
+    padding-left: 10px;
+  }
+  .nav-link {
+    letter-spacing: 1px;
+    font-size: 15px;
+
+    color: #e0e0e0a6;
+    &:active,
+    &:hover {
+      color: #fff;
+    }
+  }
+  .btn {
+    color: #e0e0e0a6;
+
+    border: 1px solid #e0e0e0a6;
+    padding: 5px 8px;
+  }
+}
+.navbar-brand {
+  img {
+    width: 40px;
+    padding-bottom: 8px;
+  }
+  .logo-txt {
+    font-family: "Courgette", cursive;
+    color: whitesmoke;
+    font-size: 25px;
   }
 }
 
-.nav-link {
-  color: #fff;
-  letter-spacing: 2px;
-}
-.navbar-nav .nav-link.active {
-  color: $primary-color;
-  font-weight: bold;
-}
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
-  color: $primary-color;
-  transition: ease-in-out 0.4s;
-  text-decoration: none;
-}
+//-----------Start NavBar-------------------------------------
+// #logo-img {
+//   max-width: 150px;
+// }
+// .navbar {
+//   transition: all 0.4s;
+//   background-color: rgba(0, 0, 0, 0) !important;
+// }
+
+// .nav-link {
+//   color: #fff;
+//   letter-spacing: 2px;
+// }
+// .navbar-nav .nav-link.active {
+//   color: $primary-color;
+//   font-weight: bold;
+// }
+// .navbar .nav-link:hover,
+// .navbar .nav-link:focus {
+//   color: $primary-color;
+//   transition: ease-in-out 0.4s;
+//   text-decoration: none;
+// }
 
 /* Change navbar styling on scroll */
 
@@ -80,9 +129,12 @@ body {
   background-size: cover;
   overflow-x: hidden;
 }
-.img-contain {
+#shadow {
   background: rgba(13, 14, 15, 0.5);
 }
+// .img-contain {
+//   background: rgba(13, 14, 15, 0.5);
+// }
 
 @keyframes yourAnimation {
   0% {
@@ -101,28 +153,30 @@ body {
 
     line-height: 40px;
     color: #fff;
-    padding-top: 20%;
+    padding-top: 12%;
     margin-bottom: 4%;
     text-align: center;
-    font-weight: 400;
-    letter-spacing: 0.3rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
     text-shadow: 0.1rem 0.1rem 0.7rem black;
   }
 
   .btn-order {
     animation: yourAnimation 2s forwards 0s ease;
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
+    border-radius: 0;
 
     letter-spacing: 5;
     text-shadow: 0.1rem 0.1rem 0.7rem black;
     text-align: center;
-
-    margin-bottom: 14%;
+    padding: 10px 25px;
+    margin-bottom: 12%;
   }
 
   .btn-down {
     margin: 0 0 2% 0;
+    border-radius: 50%;
   }
 }
 
@@ -137,15 +191,18 @@ body {
   h2 {
     padding: 15% 0 4% 0;
     font-family: "Courgette", cursive;
+    color: $primary-color;
+    font-size: 28px;
   }
   h1 {
-    font-size: 40px;
+    font-size: 28px;
     text-transform: uppercase;
     padding-bottom: 2px;
+    color: $secondary-color;
   }
   hr {
     border-top: 2px solid $primary-color;
-    margin-left: 30%;
+
     padding-bottom: 2%;
     width: 15%;
   }
@@ -155,9 +212,13 @@ body {
   }
   .btn {
     margin-bottom: 7%;
-    padding: 15px 20px;
+
     color: #fff;
     background-color: $primary-color;
+    border-radius: 0;
+    font-size: 15px;
+    padding: 10px 25px;
+    border-color: $primary-color;
   }
 
   img {
@@ -182,13 +243,13 @@ body {
   }
   h1 {
     padding: 10% 0 5px 0;
-    font-size: 40px;
+    font-size: 28px;
     text-transform: uppercase;
     padding-bottom: 2px;
   }
   hr {
     border-top: 2px solid $primary-color;
-    margin-left: 30%;
+
     padding-bottom: 2%;
     width: 15%;
   }
@@ -198,9 +259,12 @@ body {
   }
   .btn {
     margin-bottom: 7%;
-    padding: 15px 20px;
     color: #fff;
     background-color: $primary-color;
+    border-radius: 0;
+    font-size: 15px;
+    padding: 10px 25px;
+    border-color: $primary-color;
   }
 }
 
@@ -218,13 +282,13 @@ body {
   }
   h1 {
     padding: 10% 0 5px 0;
-    font-size: 40px;
+    font-size: 28px;
     text-transform: uppercase;
     padding-bottom: 2px;
   }
   hr {
     border-top: 2px solid $primary-color;
-    margin-left: 30%;
+
     padding-bottom: 2%;
     width: 15%;
   }
@@ -233,9 +297,17 @@ body {
     font-weight: 400;
   }
   .btn {
-    padding: 15px 20px;
     color: #fff;
     background-color: $primary-color;
+    border-radius: 0;
+    font-size: 15px;
+    padding: 10px 25px;
+    border-color: $primary-color;
+  }
+  .btn-up {
+    border-radius: 50%;
+    padding: 10px 10px;
+    margin-bottom: -150px;
   }
 }
 //**************End About*********************************
@@ -245,7 +317,7 @@ body {
 footer {
   width: 100%;
   margin: 0;
-  padding: 8% 5%;
+  padding: 8% 5% 4% 5%;
   background: #1a1a1a;
   color: #fff;
   h6 {
@@ -255,15 +327,15 @@ footer {
     color: #fff;
   }
   a {
-    color: wheat;
+    color: rgb(219, 219, 219);
     &:hover {
       text-decoration: none;
-      font-weight: 300;
+
       color: #fff;
     }
   }
   i {
-    margin: 4% 5px 2% 0;
+    margin: 4% 5px 1% 0;
     padding: 10px;
     border-radius: 50%;
     font-size: 20px;
@@ -276,55 +348,56 @@ footer {
     }
   }
   h5 {
+    font-size: 15px;
     padding-top: 2%;
-    font-size: 20px;
+
     font-weight: 40;
   }
 }
 
 //--------------Media queries------------------
-@media (max-width: 807px) {
-  .site-content {
-    background: rgba(13, 14, 15, 0.8);
+// @media (max-width: 807px) {
+//   .site-content {
+//     background: rgba(13, 14, 15, 0.8);
 
-    .site-title {
-      font-size: 35px;
-      padding-bottom: 35px;
-      padding-top: 50px;
-    }
-    .site-desc {
-      font-size: 25px;
-      padding-bottom: 25px;
-    }
+//     .site-title {
+//       font-size: 35px;
+//       padding-bottom: 35px;
+//       padding-top: 50px;
+//     }
+//     .site-desc {
+//       font-size: 25px;
+//       padding-bottom: 25px;
+//     }
 
-    .site-btn1 {
-      position: absolute;
-      top: 80%;
-      right: 35%;
-    }
-    .app-buttons {
-      display: grid;
-      grid-gap: 0.8rem;
-      grid-template-columns: 1fr;
-      padding: 0 5%;
-    }
-    .social-icons {
-      padding-right: 30px;
-      i {
-        padding-top: 20px;
-        font-size: 40px;
-        text-align: center;
-      }
-    }
-    .img-mobile {
-      margin-left: 14%;
-    }
-  }
+//     .site-btn1 {
+//       position: absolute;
+//       top: 80%;
+//       right: 35%;
+//     }
+//     .app-buttons {
+//       display: grid;
+//       grid-gap: 0.8rem;
+//       grid-template-columns: 1fr;
+//       padding: 0 5%;
+//     }
+//     .social-icons {
+//       padding-right: 30px;
+//       i {
+//         padding-top: 20px;
+//         font-size: 40px;
+//         text-align: center;
+//       }
+//     }
+//     .img-mobile {
+//       margin-left: 14%;
+//     }
+//   }
 
-  .social-icons {
-    top: -1px;
-  }
-}
+//   .social-icons {
+//     top: -1px;
+//   }
+// }
 
 @import "mobile";
 
@@ -451,3 +524,19 @@ footer {
 //   }
 //--------------Chef Gallery**********************
 // }
+.img-contain-chefs {
+  .btn {
+    margin-bottom: 2%;
+  }
+}
+#chefs {
+  border: #f7f7f7 4px solid;
+  img {
+    border: 5px solid $primary-color;
+
+    &:hover {
+      opacity: 0.5;
+      @include easeOut;
+    }
+  }
+}
