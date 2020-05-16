@@ -4,21 +4,28 @@
   background-size: cover;
   height: 100%;
 
+  #shadow {
+    background-image: linear-gradient(rgba(12, 5, 5, 0.2));
+  }
+
   #restaurant-page {
     padding: 5%;
     h1 {
       padding: 20% 0 5px 0;
       color: #fff;
+      text-shadow: 0.1rem 0.1rem 0.1rem 0.9rem #09090a;
     }
     h4 {
       color: #fff;
       padding: 0 0 25% 0;
+      text-shadow: 0.1rem 0.1rem 0.1rem 0.9rem #09090a;
     }
     h2 {
       padding: 4%;
       color: $primary-color;
       font-weight: Bold;
       color: #fff;
+      text-shadow: 0.1rem 0.1rem 0.1rem 0.9rem #09090a;
     }
     .restaurant-form {
       background: rgba(#09090a, 0.8);
@@ -47,6 +54,7 @@
         margin-bottom: 15px;
         font-family: "Courgette", cursive;
         font-size: 20px;
+        box-shadow: 0.1rem 0.1rem 0.1rem rgb(169, 169, 216);
       }
       #emailInput {
         background: rgba(#333357, 0.8);
@@ -56,6 +64,7 @@
         border-right: None;
         text-align: center;
         color: blanchedalmond;
+        box-shadow: 0.1rem 0.1rem 0.1rem rgb(169, 169, 216);
 
         font-family: "Courgette", cursive;
         font-size: 20px;
@@ -68,8 +77,9 @@
       .btn {
         background: rgba(#e9e9f1, 0.8);
         padding: 8px 40%;
-
+        font-weight: bold;
         text-align: center;
+        text-shadow: none !important;
         color: $primary-color;
 
         font-family: "Courgette", cursive;
