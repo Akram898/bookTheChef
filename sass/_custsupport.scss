@@ -1,4 +1,7 @@
 #supportform {
+  h1 {
+    font-size: 25px !important;
+  }
   display: block;
   position: sticky !important;
   padding: 5%;
@@ -25,6 +28,7 @@
     text-align: center;
     padding: 5% 0 2px 0;
     font-size: 40px;
+    font-weight: 400;
   }
   .asked {
     border-top: 1px $secondary-color solid;

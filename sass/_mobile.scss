@@ -17,7 +17,11 @@
   .btn-up {
     visibility: hidden;
   }
-
+  #top-nav {
+  }
+  .fine {
+    visibility: hidden;
+  }
   #orders-main {
     .grade {
       visibility: hidden;
@@ -39,6 +43,23 @@
     }
     .firs-taste {
       margin-left: 60% !important;
+    }
+  }
+
+  #chefs-home-sec {
+    align-items: center;
+    text-align: center;
+    h1 {
+      font-size: 25px;
+      display: block;
+      right: 20px;
+      position: relative;
+      margin-left: -50%;
+    }
+  }
+  #chefs {
+    img {
+      max-width: 75%;
     }
   }
 
@@ -150,6 +171,18 @@
     }
     .firs-taste {
       margin-left: 0 !important;
+    }
+  }
+
+  #chefs-home-sec {
+    align-items: center;
+    text-align: center;
+    h1 {
+      font-size: 29px;
+      display: block;
+      right: 0;
+      position: relative;
+      margin-left: 0;
     }
   }
 }

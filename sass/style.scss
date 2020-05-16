@@ -2,6 +2,7 @@
 @import "restaurants";
 @import "orders";
 @import "custsupport";
+@import "chefs";
 html {
   scroll-behavior: smooth;
   font-family: "Libre Franklin", sans-serif;
@@ -128,7 +129,7 @@ body {
 }
 .site-content {
   .site-title {
-    animation: yourAnimation 1s forwards 0s ease;
+    animation: yourAnimation 1s forwards 0.5s ease-in;
     font-size: 40px;
 
     line-height: 40px;
@@ -339,19 +340,44 @@ footer {
 
 //--------------Chef Gallery**********************
 
-.img-contain-chefs {
-  .btn {
-    margin-bottom: 2%;
-  }
-}
-#chefs {
-  border: #f7f7f7 4px solid;
-  img {
-    border: 5px solid $primary-color;
+// .img-contain-chefs {
+//   .btn {
+//     margin-bottom: 2%;
+//   }
+// }
+// #chefs {
+//   border: #f7f7f7 4px solid;
+//   img {
+//     border: 5px solid $primary-color;
 
-    &:hover {
-      opacity: 0.5;
-      @include easeOut;
-    }
-  }
+//     &:hover {
+//       opacity: 0.5;
+//       @include easeOut;
+//     }
+//   }
+// }
+
+/*Cookie Consent Begin*/
+.cookie-banner {
+  position: fixed;
+  bottom: 40px;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  padding: 5px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
+.close {
+  height: 20px;
+  background-color: #777;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+/*Cookie Consent End*/
