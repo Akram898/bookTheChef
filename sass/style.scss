@@ -1,6 +1,7 @@
 @import "config";
 @import "restaurants";
-
+@import "orders";
+@import "custsupport";
 html {
   scroll-behavior: smooth;
   font-family: "Libre Franklin", sans-serif;
@@ -31,13 +32,18 @@ body {
   background-color: $primary-color;
 
   .fine {
-    padding-left: 15%;
+    padding-left: 19%;
+    color: white;
   }
   a {
+    padding-right: 25px;
     color: white;
     &:hover {
-      font-size: 20px;
+      color: wheat;
     }
+  }
+  .signup {
+    padding: 0 150px 0 25px;
   }
 }
 //*************************
@@ -89,32 +95,6 @@ body {
     font-size: 25px;
   }
 }
-
-//-----------Start NavBar-------------------------------------
-// #logo-img {
-//   max-width: 150px;
-// }
-// .navbar {
-//   transition: all 0.4s;
-//   background-color: rgba(0, 0, 0, 0) !important;
-// }
-
-// .nav-link {
-//   color: #fff;
-//   letter-spacing: 2px;
-// }
-// .navbar-nav .nav-link.active {
-//   color: $primary-color;
-//   font-weight: bold;
-// }
-// .navbar .nav-link:hover,
-// .navbar .nav-link:focus {
-//   color: $primary-color;
-//   transition: ease-in-out 0.4s;
-//   text-decoration: none;
-// }
-
-/* Change navbar styling on scroll */
 
 //-----------End NavBar-------------------------------------
 
@@ -355,175 +335,10 @@ footer {
   }
 }
 
-//--------------Media queries------------------
-// @media (max-width: 807px) {
-//   .site-content {
-//     background: rgba(13, 14, 15, 0.8);
-
-//     .site-title {
-//       font-size: 35px;
-//       padding-bottom: 35px;
-//       padding-top: 50px;
-//     }
-//     .site-desc {
-//       font-size: 25px;
-//       padding-bottom: 25px;
-//     }
-
-//     .site-btn1 {
-//       position: absolute;
-//       top: 80%;
-//       right: 35%;
-//     }
-//     .app-buttons {
-//       display: grid;
-//       grid-gap: 0.8rem;
-//       grid-template-columns: 1fr;
-//       padding: 0 5%;
-//     }
-//     .social-icons {
-//       padding-right: 30px;
-//       i {
-//         padding-top: 20px;
-//         font-size: 40px;
-//         text-align: center;
-//       }
-//     }
-//     .img-mobile {
-//       margin-left: 14%;
-//     }
-//   }
-
-//   .social-icons {
-//     top: -1px;
-//   }
-// }
-
 @import "mobile";
 
-// //---------chefs Page*************
-// #chef-body {
-//   #logo-img {
-//     max-width: 150px;
-//   }
-//   .navbar {
-//     transition: all 0.4s;
-//     background-color: rgba(0, 0, 0, 0);
-
-//     li {
-//       margin-right: 0;
-//       padding-left: 1rem;
-//     }
-//   }
-
-//   .nav-link {
-//     color: #fff;
-//     letter-spacing: 2px;
-//   }
-//   .navbar-nav .nav-link.active {
-//     color: $primary-color;
-//     font-weight: bold;
-//   }
-//   .navbar .nav-link:hover,
-//   .navbar .nav-link:focus {
-//     color: $primary-color;
-//     transition: ease-in-out 0.4s;
-//     text-decoration: none;
-//   }
-
-//   /* Change navbar styling on scroll */
-
-//   //-----------End NavBar-------------------------------------
-
-//   //-----------Banner-------------------------------------
-
-//   .text-primary {
-//     color: $primary-color;
-//   }
-//   #chef-main {
-//     background: url(../img/landing.jpg);
-//     background-attachment: fixed;
-//     background-size: cover;
-//     overflow-x: hidden;
-//   }
-//   .site-content {
-//     background: rgba(13, 14, 15, 0.5);
-//   }
-
-//   .text-primary {
-//     color: $primary-color;
-//   }
-
-//   #chef-body {
-//     background: url(../img/dishes/BTC12.jpg);
-//     background-attachment: fixed;
-//     background-size: cover;
-//   }
-//   .img-container {
-//     background: rgba(13, 14, 15, 0.5);
-//   }
-
-//   @keyframes yourAnimation {
-//     0% {
-//       transform: rotate(0) translateY(-40%);
-//       opacity: 0;
-//     }
-//     100% {
-//       transform: rotate(0) translateY(0);
-//       opacity: 01;
-//     }
-//   }
-//   .site-content {
-//     .site-title {
-//       animation: yourAnimation 1s forwards 0s ease;
-//       font-size: 40px;
-
-//       line-height: 40px;
-//       color: #fff;
-//       padding-top: 10%;
-//       margin-bottom: 4%;
-//       text-align: center;
-//       font-weight: 400;
-//       letter-spacing: 0.3rem;
-//       text-shadow: 0.1rem 0.1rem 0.7rem black;
-//     }
-
-//     .btn-order {
-//       animation: yourAnimation 2s forwards 0s ease;
-//       color: #fff;
-//       font-size: 20px;
-
-//       letter-spacing: 5;
-//       text-shadow: 0.1rem 0.1rem 0.7rem black;
-//       text-align: center;
-
-//       margin-bottom: 11%;
-//     }
-//   }
-//   #site-intro {
-//     background: #f7f7f7;
-//     padding: 2% 0 10% 4%;
-//     h2 {
-//       padding: 0 0 4% 0;
-//       font-family: "Courgette", cursive;
-//       color: $primary-color;
-//     }
-//     h1 {
-//       font-size: 28px;
-//       text-transform: uppercase;
-//       padding-bottom: 2px;
-//     }
-
-//     p {
-//       font-weight: 400;
-//     }
-//   }
-
-//   //--------------Chef Gallery**********************
-//   #main {
-//   }
 //--------------Chef Gallery**********************
-// }
+
 .img-contain-chefs {
   .btn {
     margin-bottom: 2%;

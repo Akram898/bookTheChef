@@ -8,7 +8,7 @@
 
     <link rel="stylesheet/scss" type="text/css" href="sass/style.scss" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="img/logo.png/" />
+    <link rel="icon" href="img/tab-logo.png" />
 
     <!--BootStrap 4 Css-->
     <link
@@ -23,7 +23,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Akram's Site - Web World</title>
+    <title>BookTheChefs</title>
   </head>
 
   <body data-spy="scroll" data-target="#navbarResponsive">
@@ -34,14 +34,14 @@
       <section id="shadow">
        <div class="container-fluid" id="top-nav">
       <div class="row">
-<div class="col-md-6 text-center">
+<div class="col-md-6 text-left">
   <span class="fine"> Fine Dining At Your Fingertips</span>
 
 </div>
-<div class="col-md-6">
-  <div class="row">
-    <a href="#">Log In <i></i></a> | <a href="#">Sign Up <i></i></a>
-  </div>
+<div class="col-md-6 text-right finedine">
+  
+    <a href="#"> Log In <i class="fas fa-sign-in-alt"></i></a> | <a class="signup" href="#">Sign Up <i class="fas fa-sign-in-alt"></i></i></a>
+ 
 
 </div>
       </div>
@@ -61,16 +61,19 @@
         <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#" target="_blank">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Restaurants</a>
+        <a class="nav-link" href="/restaurants.html" target="_blank">Restaurants</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/chefs.html" target="_blank">Chefs</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Businesses</a>
       </li>
       <li class="nav-item">
-        <a class="btn btn-outline-light " href="#">
+        <a class="btn btn-outline-light " href="/orders.html" target="_blank">
              Place an order
             </a>
       </li>
@@ -80,54 +83,6 @@
 </nav>
 
    
-<!--   
-      <nav class="navbar navbar-expand-md fixed-top py-3">
-        
-        <div class="container">
-
-
-          
-          <a href="#" class="navbar-brand text-uppercase font-weight-bold"
-            ><img id="logo-img" src="img/akram-white-logo.png" alt=""
-          /></a>
-          <button
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            class="navbar-toggler navbar-toggler-right"
-          >
-            <i class="fa fa-bars" style="color: white;"></i>
-          </button>
-
-          <div id="navbarResponsive" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a href="#home" class="nav-link text-uppercase">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#portfolio" class="nav-link text-uppercase"
-                  >Projects</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="#services-section" class="nav-link text-uppercase"
-                  >Services</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="#about" class="nav-link text-uppercase">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link text-uppercase">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav> -->
-
 
       
       <!--***********************************Start BAnner Section*******************************************************-->
@@ -135,7 +90,7 @@
         <div class="site-content text-center justify-center">
                        <div class="container-fluid img-contain" >
         
-            <h1 class="site-title">
+            <h1 class="site-title" id="fineh1">
               Fine Dining Available For Pickup
             </h1>
 
