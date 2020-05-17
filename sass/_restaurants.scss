@@ -1,11 +1,12 @@
 #restaurant-body {
-  background-image: url(../img/meals.jpg) !important;
+  background-image: url(../img/BTC5.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 
   #shadow {
-    background-image: linear-gradient(rgba(12, 5, 5, 0.2));
+    background-image: linear-gradient(rgba(85, 3, 3, 0.2));
   }
 
   #restaurant-page {
@@ -28,9 +29,9 @@
       text-shadow: 0.1rem 0.1rem 0.1rem 0.9rem #09090a;
     }
     .restaurant-form {
-      background: rgba(#09090a, 0.8);
+      background: rgba(#6e0c19, 0.5);
       padding: 2px 10% 10% 10%;
-      border: 2px solid rgb(58, 56, 63);
+      border: 2px solid $primary-color;
       border-radius: 20px;
       margin-top: 2%;
       box-shadow: 0.1rem 0.1rem 0.4rem rgb(169, 169, 216);
@@ -44,7 +45,7 @@
       }
 
       .input1 {
-        background: rgba(#333357, 0.8);
+        background: rgba($primary-color, 0.8);
         padding: 20px;
         border-left: None;
         border-top: None;
@@ -57,7 +58,7 @@
         box-shadow: 0.1rem 0.1rem 0.1rem rgb(169, 169, 216);
       }
       #emailInput {
-        background: rgba(#333357, 0.8);
+        background: rgba($primary-color, 0.8);
         padding: 20px;
         border-left: None;
         border-top: None;
